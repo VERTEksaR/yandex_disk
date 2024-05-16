@@ -92,7 +92,7 @@ def get_list_all_files_comp():
     files = os.listdir(config_data.PATH_TO_SYNC_DIR)
 
     for comp_file in files:
-        if comp_file not in COMP_FILES:
+        if comp_file not in COMP_FILES and os.path.isfile(os.path.join('\\', config_data.PATH_TO_SYNC_DIR, comp_file)):
             COMP_FILES.append(comp_file)
 
 
