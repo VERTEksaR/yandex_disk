@@ -1,14 +1,6 @@
-import logging
-
 import config_data
 
 from template_cloud import FilesCloud
-
-logging.basicConfig(level=logging.INFO, filename=config_data.PATH_TO_LOG_FILE,
-                    filemode='a', format='%(asctime)s | %(levelname)s | %(message)s')
-logger = logging.getLogger(__name__)
-
-DISK_FILES, COMP_FILES = [], []
 
 
 if __name__ == '__main__':
